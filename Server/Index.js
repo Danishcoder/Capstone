@@ -13,9 +13,7 @@ const {seed, getBoxers, addVote} = require('./controller.js')
 app.use(express.json())
 app.use(cors())
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../index.html'))
-})
+
 
 app.get('/getboxers', getBoxers)
 
