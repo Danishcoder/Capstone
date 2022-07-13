@@ -1,6 +1,13 @@
+
+
 let equipButton = document.querySelector("#Equipment-Button")
 let bookButton = document.querySelector("#Book-Button")
 let randButton = document.querySelector("#random-Button")
+let floydButton = document.querySelector('#fmButton')
+let mikeButton = document.querySelector('#mtButton')
+let mannyButton = document.querySelector('#mpButton')
+let caneloButton = document.querySelector('#caButton')
+let muhammadButton = document.querySelector('#maButton')
 
 let Mayweather = "https://www.youtube.com/watch?v=tA14uRHqqWs&ab_channel=DAZNBoxing"
 let muhammadAli = "https://www.youtube.com/watch?v=1lvkeUjEMlA&ab_channel=PeterJohnson"
@@ -9,8 +16,6 @@ let mannyPacquiao = "https://www.youtube.com/watch?v=FXYTqYtEsQQ&ab_channel=BOXI
 let canelo = "https://www.youtube.com/watch?v=51LorPZ6YiE&ab_channel=DAZNBoxing"
 
 let links = [Mayweather, muhammadAli, mikeTyson, mannyPacquiao, canelo]
-
-
 
 
 function randomButton (event) {
@@ -28,6 +33,70 @@ function booksButton (event) {
 
 
 
+/////////////////////////////////////////////
+function fmButton (event) {
+    axios.post('http://localhost:4004/addvote?boxer_id=1',{})
+    .then(() =>{
+        populateVote()
+
+    })
+}
+
+function mtButton (event) {
+    axios.post('http://localhost:4004/addvote?boxer_id=2',{})
+    .then(() =>{
+        populateVote()
+    })
+}
+
+function mpButton (event) {
+    axios.post('http://localhost:4004/addvote?boxer_id=3',{})
+    .then(() =>{
+        populateVote()
+    })
+}
+
+function caButton (event) {
+    axios.post('http://localhost:4004/addvote?boxer_id=4',{})
+    .then(() =>{
+        populateVote()
+    })
+}
+    function maButton (event) {
+    axios.post('http://localhost:4004/addvote?boxer_id=5',{})
+    .then(() =>{
+        populateVote()
+    })
+}
+
+/////////////////////////////////////////////
+
+
+
+
+
+function populateVote() {
+    axios.get('http://localhost:4004/getboxers')
+    .then((data) =>{
+
+        let boxers = data.data[0]
+console.log(boxers)
+
+        document.getElementById('boxer_id_1')
+        .innerHTML=boxers[0].totalvotes
+        document.getElementById('boxer_id_2')
+        .innerHTML=boxers[1].totalvotes
+        document.getElementById('boxer_id_3')
+        .innerHTML=boxers[2].totalvotes
+        document.getElementById('boxer_id_4')
+        .innerHTML=boxers[3].totalvotes
+        document.getElementById('boxer_id_5')
+        .innerHTML=boxers[4].totalvotes
+        
+        
+
+    })
+}
 
 
 
@@ -35,11 +104,17 @@ function booksButton (event) {
 
 
 
+
+floydButton.addEventListener('click', fmButton)
 equipButton.addEventListener('click',equipmentButton)
 bookButton.addEventListener('click',booksButton)
 randButton.addEventListener('click',randomButton)
 
-
+floydButton.addEventListener('click', fmButton)
+mikeButton.addEventListener('click',mtButton)
+mannyButton.addEventListener('click',mpButton)
+caneloButton.addEventListener('click',caButton)
+muhammadButton.addEventListener('click',maButton)
 
 
 

@@ -24,8 +24,7 @@
       <div class="column" id="column1" style="background-color:rgb(184, 188, 242);">
         <h1>Book</h1>
         <img src="https://image.ebooks.com/previews/001/001222/001222253/001222253-hq-168-80.jpg">
-        <img src=""
-        <p>Some text..</p>
+        <p></p> Some text..<p>
         <button onClick= "Button" button id="Book-Button"> Click</button>
       </div>
 
@@ -48,53 +47,51 @@
 
 
 
-      <div class="column" id="column1" style="background-color:rgb(250, 250, 250);">
-        <h1> Who is the best of all time?</h1>
+      
+      <div class="column" id="column4" style="background-color:rgb(250, 250, 250);">
 
-                 <div class="row">
-                 <button id = "Muhammad"> Vote </button>
-                 <div class="name">Muhammad Ali</div><div class="score">1</div> 
-                 </div>
-    
-                 <div class="row">
-                <button id = "Mayweather"> Vote </button>
-                 <div class="name">Floyd Mayweather</div><div class="score">2</div>
-     </div>
-    
+        <div id="container">
+            <div class="wrapper">
+        <h1> Who is your favorite boxer</h1>
+         </div>  
+            <div class="wrapper">
+                <div class="name">Floyd Mayweather</div><div id="boxer_id_1"></div> 
+                <button id="fmButton"> Vote  </button>
+                <div> <section> Total number</section> </div>
+            </div>
+            
+            <div class="wrapper">
+                <div class="name">Mike Tyson</div><div id="boxer_id_2"></div>
+                <button id="mtButton"> Vote  </button>
+            </div>
+            
+            <div class="wrapper">
+                <div class="name">Manny Pacquiao</div><div id="boxer_id_3"></div>
+                <button id="mpButton"> Vote  </button>
+            </div>
+            
+            <div class="wrapper">
+                <div class="name">Canelo Alvarez</div><div id="boxer_id_4"></div>
+                <button id="caButton"> Vote  </button>
+            </div>
+            
+            <div class="wrapper">
+                <div class="name">Muhammad Ali</div><div id="boxer_id_5"></div>
+                <button id="maButton"> Vote  </button>
+            </div>
+
+           
+        </div>
 
 
 
 
-    <div class="row">
-        <button id = "Tyson"> Vote </button>
-        <div class="name">Mike Tyson</div><div class="score">3</div>
-    </div>
-
-
-    
-    <div class="row">
-        <button id = "Alvarez"> Vote </button>
-        <div class="name">Canelo Alvarez</div><div class="score">4</div>
-    </div>
-
-
-
-    
-    <div class="row">
-        <button id = "Paquiao"> Vote </button>
-        <div class="name">Manny Paquiao</div>
-        <div class="score">5</div>
-    </div>
-</div>
-        
-        
-      </div>
 
     </div>
  
 
 
-
+<script src="../node_modules/axios/dist/axios.min.js"></script>
 <script src="./main.js"></script>
 </body>
 </html>
