@@ -4,7 +4,7 @@ const path = require('path')
 const app = express()
 const cors = require('cors')
 
-const {SERVER_PORT} = process.env
+
 
 const {seed, getBoxers, addVote} = require('./controller.js')
 
@@ -14,7 +14,15 @@ app.use(express.json())
 app.use(cors())
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../index.html'))
+    res.sendFile(path.join(__dirname, '../Front-End/index.html'))
+})
+
+app.get('/css', (req, res) => {
+    res.sendFile(path.join(__dirname, '../Front-End/index.css'))
+})
+
+app.get('/js', (req, res) => {
+    res.sendFile(path.join(__dirname, '../Front-End/main.js'))
 })
 
 app.get('/getboxers', getBoxers)
@@ -26,5 +34,5 @@ app.post('/addvote', addVote)
 
 const port = process.env.PORT || 4005
 
-app.listen(SERVER_PORT, () => console.log(`up on ${SERVER_PORT}`))
+app.listen(port, () => console.log(`up on ${port}`))
 

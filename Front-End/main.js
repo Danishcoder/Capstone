@@ -35,7 +35,7 @@ function booksButton (event) {
 
 /////////////////////////////////////////////
 function fmButton (event) {
-    axios.post('http://localhost:4004/addvote?boxer_id=1',{})
+    axios.post('/addvote?boxer_id=1',{})
     .then(() =>{
         populateVote()
 
@@ -43,27 +43,27 @@ function fmButton (event) {
 }
 
 function mtButton (event) {
-    axios.post('http://localhost:4004/addvote?boxer_id=2',{})
+    axios.post('/addvote?boxer_id=2',{})
     .then(() =>{
         populateVote()
     })
 }
 
 function mpButton (event) {
-    axios.post('http://localhost:4004/addvote?boxer_id=3',{})
+    axios.post('/addvote?boxer_id=3',{})
     .then(() =>{
         populateVote()
     })
 }
 
 function caButton (event) {
-    axios.post('http://localhost:4004/addvote?boxer_id=4',{})
+    axios.post('/addvote?boxer_id=4',{})
     .then(() =>{
         populateVote()
     })
 }
     function maButton (event) {
-    axios.post('http://localhost:4004/addvote?boxer_id=5',{})
+    axios.post('/addvote?boxer_id=5',{})
     .then(() =>{
         populateVote()
     })
@@ -76,7 +76,7 @@ function caButton (event) {
 
 
 function populateVote() {
-    axios.get('http://localhost:4004/getboxers')
+    axios.get('/getboxers')
     .then((data) =>{
 
         let boxers = data.data[0]
