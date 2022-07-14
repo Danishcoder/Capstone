@@ -68,7 +68,6 @@ function caButton (event) {
         populateVote()
     })
 }
-
 /////////////////////////////////////////////
 
 

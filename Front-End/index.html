@@ -12,7 +12,7 @@
 
     <div>
     <header >
-        <h1> All things Boxing</h1>
+        <h1 class="titleheader"> All things Boxing</h1>
     </header>
     </div>
 
@@ -22,62 +22,69 @@
     <div class="Columns">
 
       <div class="column" id="column1" style="background-color:rgb(184, 188, 242);">
-        <h1>Book</h1>
-        <img src="https://image.ebooks.com/previews/001/001222/001222253/001222253-hq-168-80.jpg">
-        <p></p> Some text..<p>
-        <button onClick= "Button" button id="Book-Button"> Click</button>
+        <h1>Important Book</h1>
+        <img src="https://m.media-amazon.com/images/I/51uoMUuck9L.jpg">
+        <p> This is a great book for beginner boxers to learn workouts that will help them drill down the fundamentals of the sport, </p> 
+
+        <div style="position:relative; top: 50px;">
+        <button class ="favButton" onClick= "Button" button id="Book-Button">Purchase Book</button>
+        </div>
+
       </div>
+
 
 
       <div class="column" id="column2" style="background-color:#bbb;">
-        <h2>Informational Video</h2>
+        <h1>Professional Highlights</h1>
         <p>Some text..</p>
-        <iframe width="450" height="400" src="https://www.youtube.com/embed/D8DouKeOkfI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <button id = "random-Button"> Click to see a random highlight!</button>
-      </div>
-
-
-
-      <div class="column" id="column3" style="background-color:rgb(196, 95, 95);">
-        <h2>Necessary Equipment</h2>
-        <img src  = "https://m.media-amazon.com/images/I/71gbM8hescL._AC_SL1500_.jpg">
-        <p>Some text..</p>
-        <button class = "Button" button id="Equipment-Button">Click</button>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/kknVfOJZ1w0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <button class ="favButton" id = "random-Button"> Click to see a random highlight!</button>
       </div>
 
 
 
       
-      <div class="column" id="column4" style="background-color:rgb(250, 250, 250);">
+      <div class="column" id="column3" style="background-color:rgb(196, 95, 95);">
+        <h1>Necessary Equipment</h1>
+        <img src  = "https://m.media-amazon.com/images/I/71gbM8hescL._AC_SL1500_.jpg">
+        <p>Some text..</p>
 
+        <div style="position:relative; top: 50px;">
+        <button class = "favButton" button id="Equipment-Button">Purchase Equipment</button>
+        </div>
+        
+      </div>
+
+
+
+      <div class="column" id="column4" style="background-color:rgb(250, 250, 250);"> 
         <div id="container">
             <div class="wrapper">
         <h1> Who is your favorite boxer</h1>
          </div>  
             <div class="wrapper">
                 <div class="name">Floyd Mayweather</div><div id="boxer_id_1"></div> 
-                <button id="fmButton"> Vote  </button>
-                <div> <section> Total number</section> </div>
+                <button class = "voteButton" id="fmButton"> Vote  </button>
             </div>
-            
+
             <div class="wrapper">
                 <div class="name">Mike Tyson</div><div id="boxer_id_2"></div>
-                <button id="mtButton"> Vote  </button>
+                <button class = "voteButton" id="mtButton"> Vote  </button>
             </div>
             
             <div class="wrapper">
                 <div class="name">Manny Pacquiao</div><div id="boxer_id_3"></div>
-                <button id="mpButton"> Vote  </button>
+                <button class = "voteButton" id="mpButton"> Vote  </button>
             </div>
             
             <div class="wrapper">
                 <div class="name">Canelo Alvarez</div><div id="boxer_id_4"></div>
-                <button id="caButton"> Vote  </button>
+                <button class = "voteButton" id="caButton"> Vote  </button>
             </div>
             
             <div class="wrapper">
                 <div class="name">Muhammad Ali</div><div id="boxer_id_5"></div>
-                <button id="maButton"> Vote  </button>
+                <button class = "voteButton" id="maButton"> Vote  </button>
             </div>
 
            
