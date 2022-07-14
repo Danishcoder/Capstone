@@ -24,7 +24,7 @@ function randomButton (event) {
 }
 
 function equipmentButton (event) {
-    window.location.href="https://www.amazon.com/Odoland-Punching-UNFILLED-Boxing-Hanging/dp/B0814HSSZJ/ref=sr_1_1?crid=25DZECD21SZ2A&keywords=essential+boxing+kit&qid=1657560481&sprefix=essential+boxing+kit%2Caps%2C51&sr=8-1"  
+    window.location.href="https://www.amazon.com/Everlast-Station-100-lb-Speedbag-Bundle/dp/B00NKOP4WW/ref=sr_1_7?crid=3VVIN3UF5A6FD&keywords=boxing+equipment&qid=1657834811&sprefix=boxing+equipme%2Caps%2C80&sr=8-7"  
 }
 
 function booksButton (event) {
